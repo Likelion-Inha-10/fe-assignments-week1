@@ -1,6 +1,6 @@
 let input = require('fs').readFileSync('dev/stdin').toString().split(' ');
 
-const score_num = Number(input);
+const score_num = Number(input[0]);
 let score_ABC;
 
 if(score_num >= 90 && score_num <= 100){

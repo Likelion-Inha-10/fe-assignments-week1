@@ -1,7 +1,7 @@
-//let input = require('fs').readFileSync('dev/stdin').toString().split(' ');
+let input = require('fs').readFileSync('dev/stdin').toString().split(' ');
 
-//const num = Number(input[0]);
-const num = 5;
+const num = Number(input[0]);
+
 let star="";
 for(let i=0; i<num; i++){
     star+='*';
