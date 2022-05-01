@@ -1,11 +1,12 @@
 let input = require('fs').readFileSync('dev/stdin').toString().split(' ');
-const num1 = Number(input[0]);
-if(num1 % 4 === 0 && num1 % 100 !== 0){
-    console.log("1")
+
+let year = Number(input[0]);
+
+if ((year % 4 === 0 && year % 100!==0)|| year %400===0)
+{
+    console.log("1");
+} else {
+    console.log("0");
 }
 
-else if(num1 % 400 === 0){
-    console.log("1")
-}
 
-else{ console.log("0")}
